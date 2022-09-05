@@ -1,0 +1,32 @@
+function sum(a,b){
+    // debugger;
+    return a+b;
+}
+
+var result = sum(1,2);
+console.log(result);
+
+
+$(document).ready(function(){
+    $(".menu-btn").click(function(){
+      $(".nav-menu").toggle();
+      $('.nav-menu').toggleClass('active');
+    });
+
+    $(".icon-menu-icon").click(function(){
+      $(this).hide();
+      $('.icon-close-icon').show();
+    })
+    $(".icon-close-icon").click(function(){
+      $(this).hide();
+      $('.icon-menu-icon').show();
+  })
+    
+
+      // var x = document.getElementById("menu");
+      // if (x.innerHTML === <span class="icon-menu-icon"></span>) {
+      //   x.innerHTML = <span class="icon-close-icon"></span>;
+      // } else {
+      //   x.innerHTML = <span class="icon-menu-icon"></span>;
+      // }
+  });
